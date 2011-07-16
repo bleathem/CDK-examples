@@ -5,7 +5,7 @@
     xmlns:javaee="http://java.sun.com/xml/ns/javaee">
 
     <cc:interface>
-        <cdk:class>ca.bleathem.richfaces.hello.renderkit.html.SelectRendere2r</cdk:class>
+        <cdk:class>ca.bleathem.richfaces.hello.renderkit.HelloRenderer</cdk:class>
         <cdk:superclass>javax.faces.render.Renderer</cdk:superclass>
         <cdk:component-family>ca.bleathem.text</cdk:component-family>
         <cdk:renderer-type>ca.bleathem.hello</cdk:renderer-type>
