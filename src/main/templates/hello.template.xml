@@ -7,9 +7,7 @@
     <cc:interface>
         <cdk:class>ca.bleathem.richfaces.hello.renderkit.HelloRenderer</cdk:class>
         <cdk:superclass>javax.faces.render.Renderer</cdk:superclass>
-        <cdk:component-family>ca.bleathem.text</cdk:component-family>
         <cdk:renderer-type>ca.bleathem.hello</cdk:renderer-type>
-        <cdk:renders-children>true</cdk:renders-children>
     </cc:interface>
 
     <cc:implementation>
