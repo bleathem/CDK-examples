@@ -6,15 +6,12 @@
 
     <cc:interface>
         <cdk:class>ca.bleathem.richfaces.input.renderkit.InputRenderer</cdk:class>
-        <cdk:superclass>javax.faces.render.Renderer</cdk:superclass>
-        <cdk:component-family>ca.bleathem.input</cdk:component-family>
+        <cdk:superclass>org.richfaces.renderkit.InputRendererBase</cdk:superclass>
         <cdk:renderer-type>ca.bleathem.input</cdk:renderer-type>
-        <cdk:renders-children>true</cdk:renders-children>
-        <cc:attribute name="value" type="java.lang.String" />
     </cc:interface>
 
     <cc:implementation>
-        <input type="text" name="#{clientId}" value="#{component.attributes['value']}" />
+        <input type="text" name="#{clientId}" value="#{getInputValue(facesContext, component)}" />
     </cc:implementation>
 
 </cdk:root>

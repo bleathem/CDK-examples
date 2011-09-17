@@ -6,6 +6,17 @@
     <packaging>jar</packaging>
     <version>1.0-SNAPSHOT</version>
     <name>CDK examples</name>
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.richfaces</groupId>
+                <artifactId>richfaces-bom</artifactId>
+                <version>4.1.0-SNAPSHOT</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
     <dependencies>
         <dependency>
             <groupId>javax</groupId>
@@ -19,10 +30,16 @@
             <version>4.1.0-SNAPSHOT</version>
         </dependency>
         <dependency>
-            <groupId>org.richfaces.ui.common</groupId>
-            <artifactId>richfaces-ui-common-ui</artifactId>
-            <version>4.1.0-SNAPSHOT</version>
-	    <scope>provided</scope>
+            <groupId>org.richfaces.core</groupId>
+            <artifactId>richfaces-core-impl</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.richfaces.ui</groupId>
+            <artifactId>richfaces-components-api</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.richfaces.ui</groupId>
+            <artifactId>richfaces-components-ui</artifactId>
         </dependency>
     </dependencies>
     <build>
