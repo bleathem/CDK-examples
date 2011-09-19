@@ -13,8 +13,12 @@
     <cc:implementation>
         <input type="text" name="#{clientId}" class="rf_jq_cal" value="#{getInputValue(facesContext, component)}" />
         <script type="text/javascript">
+            <cdk:scriptObject name="pluginOptions">
+                <cdk:scriptOption name="buttonImage" value="#{component.attributes['buttonImage'] == null ? getResourcePath(facesContext, 'com.jqueryui/development-bundle/demos/datepicker/images', 'calendar.gif') : component.attributes['buttonImage']}" />
+                <cdk:scriptOption attributes="showOn dateFormat buttonImageOnly" />
+            </cdk:scriptObject>
             jQuery(function() {
-                $(".rf_jq_cal").calendar();
+                $(".rf_jq_cal").calendar(#{toScriptArgs(pluginOptions)});
             });
 	    </script>
     </cc:implementation>
