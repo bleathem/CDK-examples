@@ -1,13 +1,6 @@
 package ca.bleathem.richfaces.jquery.component;
 
-import org.richfaces.cdk.annotations.Attribute;
-import org.richfaces.cdk.annotations.JsfComponent;
-import org.richfaces.cdk.annotations.JsfRenderer;
-import org.richfaces.cdk.annotations.Tag;
-
-/**
- * A trivial input component
- */
+import org.richfaces.cdk.annotations.*;
 
 @JsfComponent(
         type = "ca.bleathem.richfaces.jquery.Calendar",
@@ -23,11 +16,6 @@ abstract public class AbstractCalendar extends javax.faces.component.UIInput {
     public abstract String getShowOn();
 
     @Attribute()
-    public abstract String getButtonImage();
-
-    @Attribute()
     public abstract String getButtonImageOnly();
-
-
 
 }
