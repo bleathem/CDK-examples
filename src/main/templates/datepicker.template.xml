@@ -5,9 +5,9 @@
     xmlns:javaee="http://java.sun.com/xml/ns/javaee">
 
     <cc:interface>
-        <cdk:class>ca.bleathem.richfaces.jquery.renderkit.CalendarRenderer</cdk:class>
-        <cdk:superclass>ca.bleathem.richfaces.jquery.renderkit.CalenderRendererBase</cdk:superclass>
-        <cdk:renderer-type>ca.bleathem.jquery.CalendarRenderer</cdk:renderer-type>
+        <cdk:class>ca.bleathem.richfaces.jquery.renderkit.DatepickerRenderer</cdk:class>
+        <cdk:superclass>ca.bleathem.richfaces.jquery.renderkit.DatepickerRendererBase</cdk:superclass>
+        <cdk:renderer-type>ca.bleathem.jquery.DatepickerRenderer</cdk:renderer-type>
     </cc:interface>
 
     <cc:implementation>
@@ -18,7 +18,7 @@
                 <cdk:scriptOption attributes="showOn dateFormat buttonImageOnly" />
             </cdk:scriptObject>
             jQuery(function() {
-                $(document.getElementById('#{clientId}')).calendar(#{toScriptArgs(pluginOptions)});
+                $(document.getElementById('#{clientId}')).datepicker(#{toScriptArgs(pluginOptions)});
             });
 	    </script>
     </cc:implementation>

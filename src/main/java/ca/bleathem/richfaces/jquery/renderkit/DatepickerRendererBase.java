@@ -21,10 +21,6 @@
  **/
 package ca.bleathem.richfaces.jquery.renderkit;
 
-/**
- * @author <a href="http://community.jboss.org/people/bleathem">Brian Leathem</a>
- */
-
 import org.richfaces.renderkit.InputRendererBase;
 
 import javax.faces.application.ResourceDependencies;
@@ -37,8 +33,7 @@ import javax.faces.application.ResourceDependency;
         @ResourceDependency(library = "com.jqueryui/development-bundle/ui", name = "jquery.ui.core.js"),
         @ResourceDependency(library = "com.jqueryui/development-bundle/ui", name = "jquery.ui.widget.js"),
         @ResourceDependency(library = "com.jqueryui/development-bundle/ui", name = "jquery.ui.datepicker.js"),
-        @ResourceDependency(library = "ca.bleathem", name = "calendar.js"),
         @ResourceDependency(library = "ca.bleathem", name = "calendar.gif")
 })
-public class CalenderRendererBase extends InputRendererBase {
+public class DatepickerRendererBase extends InputRendererBase {
 }
